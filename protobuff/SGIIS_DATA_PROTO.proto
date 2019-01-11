@@ -1,0 +1,25 @@
+syntax = "proto2";
+
+
+message request {
+    enum Device_Type {
+        long_distance_sticky_board_device = 0;
+    }
+    required bytes img_data = 1;
+    required string img_type = 2;
+    required int32 img_shape_width = 3;
+    required int32 img_shape_high = 4;
+    required Device_Type device_type = 5;
+    optional float confidence_threshold = 6;
+    optional float nms_threshold = 7;
+    optional string debug_info = 8;
+    optional string other_info = 9;
+
+}
+
+message response {
+    required bool successful = 1;
+    optional bytes identified_img_data = 2;
+    optional string identified_result = 3;
+}
+

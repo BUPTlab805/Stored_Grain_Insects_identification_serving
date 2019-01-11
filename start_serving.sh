@@ -1,0 +1,1 @@
+python main.py  8008 0 ./config/main.conf &

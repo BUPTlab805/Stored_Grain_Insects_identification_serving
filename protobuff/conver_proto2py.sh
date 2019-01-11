@@ -1,0 +1,1 @@
+protoc -I . --python_out=. SGIIS_DATA_PROTO.proto
