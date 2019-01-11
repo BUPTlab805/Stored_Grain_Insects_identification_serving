@@ -1,1 +1,0 @@
-# Stored_Grain_Insects_identification_serving
